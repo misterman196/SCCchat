@@ -8,15 +8,9 @@ function show(id) {
 // SCREEN 1 — SCCchat Login
 // ==============================
 const sccLoginBtn = document.getElementById("sccLoginBtn");
-const sccCreateLink = document.getElementById("sccCreateLink");
 
 sccLoginBtn.addEventListener("click", () => {
   show("tiktokScreen");
-});
-
-sccCreateLink.addEventListener("click", (e) => {
-  e.preventDefault();
-  alert("Account creation coming soon — log in with TikTok for now!");
 });
 
 // ==============================
