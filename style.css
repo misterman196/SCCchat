@@ -65,12 +65,14 @@ body {
 
 .card-body {
   padding: 36px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
 }
 
 /* ---- brand ---- */
 .brand {
   text-align: center;
-  margin-bottom: 32px;
 }
 
 .brand-icon {
@@ -181,7 +183,7 @@ body {
   background: #d6a34a;
   color: #0c0d12;
   font-size: 14px;
-  margin-top: 4px;
+  width: 100%;
 }
 
 .btn-primary:hover {
