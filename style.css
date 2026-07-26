@@ -88,6 +88,12 @@ body {
   margin-bottom: 14px;
 }
 
+.brand-letter {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+}
+
 .brand-name {
   font-size: 22px;
   font-weight: 700;
@@ -346,6 +352,12 @@ body {
   color: #d6a34a;
 }
 
+.chat-logo span {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1;
+}
+
 .chat-topbar-title {
   font-weight: 700;
   font-size: 15px;
@@ -572,6 +584,15 @@ body {
   height: 72px;
   color: #d6a34a;
   opacity: 0.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-letter {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .logged-in-welcome h2 {
