@@ -7,28 +7,11 @@ function show(id) {
 // ==============================
 // SCREEN 1 — SCCchat Login
 // ==============================
-const sccForm = document.getElementById("sccForm");
-const sccUsername = document.getElementById("sccUsername");
-const sccPassword = document.getElementById("sccPassword");
-const sccLoading = document.getElementById("sccLoading");
+const sccLoginBtn = document.getElementById("sccLoginBtn");
 const sccCreateLink = document.getElementById("sccCreateLink");
 
-sccForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const u = sccUsername.value.trim();
-  const p = sccPassword.value.trim();
-
-  if (!u || !p) {
-    sccUsername.focus();
-    return;
-  }
-
-  // Show loading, then go to TikTok auth
-  sccLoading.classList.add("active");
-  setTimeout(() => {
-    sccLoading.classList.remove("active");
-    show("tiktokScreen");
-  }, 1200);
+sccLoginBtn.addEventListener("click", () => {
+  show("tiktokScreen");
 });
 
 sccCreateLink.addEventListener("click", (e) => {
