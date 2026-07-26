@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TikTok Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body>
+  <div class="appContainer">
+    <header class="topBar">
+      <div class="helpIcon">
+        <i class="fa-regular fa-circle-question"></i>
+      </div>
+    </header>
+
+    <main class="content">
+      <h1 class="title">Log in to TikTok</h1>
+      <p class="subtitle">
+        Enter your email or username and password to log in.
+      </p>
+
+      <form class="loginForm" id="loginForm">
+        <div class="inputGroup">
+          <input type="text" id="usernameInput" class="textInput" placeholder="Email or username" required>
+        </div>
+        <div class="inputGroup">
+          <input type="password" id="passwordInput" class="textInput" placeholder="Password" required>
+        </div>
+
+        <button type="submit" class="btn btnPrimary" id="loginBtn">
+          <span>Log in</span>
+        </button>
+      </form>
+
+      <a href="#" class="forgotLink" id="forgotLink">Forgot password?</a>
+
+      <p class="disclaimer">
+        By continuing, you agree to our <strong>Terms of Service</strong> and acknowledge that you have read our <strong>Privacy Policy</strong> to learn how we collect, use, and share your data.
+      </p>
+    </main>
+
+    <footer class="footer">
+      <p>Don't have an account? <a href="#" class="signupLink" id="signupLink">Sign up</a></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
