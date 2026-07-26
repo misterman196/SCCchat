@@ -1,0 +1,8 @@
+{
+  "name": "sccchat",
+  "version": "1.0.0",
+  "description": "SCCchat - TikTok-style chat UI",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
