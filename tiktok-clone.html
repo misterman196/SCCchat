@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCCchat - Login</title>
+  <link rel="stylesheet" href="tiktok-clone.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body>
+  <!-- ===== SCREEN 1: SCCchat Login ===== -->
+  <div class="screen" id="sccScreen">
+    <div class="appContainer sccContainer">
+
+      <!-- Top decorative bar -->
+      <div class="sccTopBar"></div>
+
+      <main class="content sccContent">
+        <!-- Brand -->
+        <div class="sccBrand">
+          <div class="sccLogo">
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <h1 class="sccAppName">SCCchat</h1>
+          <p class="sccTagline">Where the nullsec crew hangs out</p>
+        </div>
+
+        <!-- Login form -->
+        <form class="loginForm" id="sccForm">
+          <div class="inputGroup">
+            <input type="text" id="sccUsername" class="textInput sccInput" placeholder="Username" required>
+          </div>
+          <div class="inputGroup">
+            <input type="password" id="sccPassword" class="textInput sccInput" placeholder="Password" required>
+          </div>
+
+          <button type="submit" class="btn sccLoginBtn" id="sccLoginBtn">
+            <i class="fa-brands fa-tiktok"></i>
+            <span>Log in with TikTok</span>
+          </button>
+        </form>
+
+        <!-- Divider -->
+        <div class="sccDivider">
+          <span>or</span>
+        </div>
+
+        <!-- Secondary options -->
+        <button class="btn sccGuestBtn" id="sccGuestBtn">
+          <i class="fa-regular fa-eye-slash"></i>
+          <span>Continue as guest</span>
+        </button>
+
+        <p class="sccDisclaimer">
+          By continuing, you agree to the <strong>Terms of Service</strong> and <strong>Privacy Policy</strong>.
+        </p>
+      </main>
+
+      <footer class="sccFooter">
+        <p>New to SCCchat? <a href="#" class="sccCreateLink" id="sccCreateLink">Create an account</a></p>
+      </footer>
+
+      <!-- Loading overlay -->
+      <div class="sccLoading" id="sccLoading">
+        <div class="sccSpinner"></div>
+        <p>Redirecting to TikTok...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SCREEN 2: TikTok Auth ===== -->
+  <div class="screen hidden" id="tiktokScreen">
+    <div class="appContainer">
+      <header class="topBar">
+        <div class="backBtn" id="backBtn">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="helpIcon">
+          <i class="fa-regular fa-circle-question"></i>
+        </div>
+      </header>
+
+      <main class="content">
+        <h1 class="title">Log in to TikTok</h1>
+        <p class="subtitle">
+          Connect your TikTok account to start chatting on SCCchat.
+        </p>
+
+        <form class="loginForm" id="tiktokForm">
+          <div class="inputGroup">
+            <input type="text" id="tiktokUsername" class="textInput" placeholder="Email or username" required>
+          </div>
+          <div class="inputGroup">
+            <input type="password" id="tiktokPassword" class="textInput" placeholder="Password" required>
+          </div>
+
+          <button type="submit" class="btn btnPrimary" id="tiktokLoginBtn">
+            <span>Log in with TikTok</span>
+          </button>
+        </form>
+
+        <a href="#" class="forgotLink" id="tiktokForgot">Forgot password?</a>
+
+        <p class="disclaimer">
+          By continuing, you agree to TikTok's <strong>Terms of Service</strong> and <strong>Privacy Policy</strong>.
+        </p>
+      </main>
+
+      <footer class="footer">
+        <p>Don't have an account? <a href="#" class="signupLink" id="tiktokSignup">Sign up</a></p>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ===== SCREEN 3: Logged In (SCCchat) ===== -->
+  <div class="screen hidden" id="loggedInScreen">
+    <div class="appContainer sccContainer">
+      <div class="sccTopBar"></div>
+
+      <main class="content sccContent">
+        <div class="sccBrand">
+          <div class="sccLogo">
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <h1 class="sccAppName">SCCchat</h1>
+        </div>
+
+        <div class="sccWelcome">
+          <div class="sccAvatar" id="sccAvatar">
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+          <h2 class="sccWelcomeMsg" id="sccWelcomeMsg">Welcome back!</h2>
+          <p class="sccWelcomeSub">You're logged in via TikTok.</p>
+        </div>
+
+        <div class="sccChatPreview">
+          <div class="sccChatPlaceholder">
+            <i class="fa-regular fa-message"></i>
+            <p>No messages yet — start a conversation!</p>
+          </div>
+        </div>
+
+        <button class="btn sccLogoutBtn" id="sccLogoutBtn">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <span>Log out</span>
+        </button>
+      </main>
+    </div>
+  </div>
+
+  <script src="tiktok-clone.js"></script>
+</body>
+</html>
