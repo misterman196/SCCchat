@@ -21,7 +21,6 @@ const tiktokForm = document.getElementById("tiktokForm");
 const tiktokUsername = document.getElementById("tiktokUsername");
 const tiktokPassword = document.getElementById("tiktokPassword");
 const tiktokForgot = document.getElementById("tiktokForgot");
-const tiktokSignup = document.getElementById("tiktokSignup");
 
 backBtn.addEventListener("click", () => {
   show("sccScreen");
@@ -45,11 +44,6 @@ tiktokForm.addEventListener("submit", (e) => {
 tiktokForgot.addEventListener("click", (e) => {
   e.preventDefault();
   alert("Password reset link sent (demo)");
-});
-
-tiktokSignup.addEventListener("click", (e) => {
-  e.preventDefault();
-  alert("Sign up on TikTok first, then come back to log in!");
 });
 
 // ==============================

@@ -440,7 +440,6 @@ body {
   background: #ffffff;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
@@ -543,25 +542,6 @@ body {
 
 .tiktok-disclaimer strong {
   color: #161823;
-}
-
-.tiktok-footer {
-  background: #f8f8f8;
-  padding: 20px;
-  text-align: center;
-  font-size: 15px;
-  color: #161823;
-  border-top: 1px solid #f1f1f2;
-}
-
-.tiktok-signup {
-  color: #fe2c55;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.tiktok-signup:hover {
-  text-decoration: underline;
 }
 
 /* ========================================
