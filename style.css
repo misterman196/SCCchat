@@ -67,7 +67,8 @@ body {
   padding: 36px 28px 24px;
   display: flex;
   flex-direction: column;
-  min-height: 300px;
+  align-items: center;
+  gap: 32px;
 }
 
 /* ---- brand ---- */
@@ -183,7 +184,6 @@ body {
   background: #d6a34a;
   color: #0c0d12;
   font-size: 14px;
-  width: 100%;
 }
 
 .btn-primary:hover {
